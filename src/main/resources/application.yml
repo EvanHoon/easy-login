@@ -1,0 +1,14 @@
+spring:
+  datasource:
+    url: jdbc:mysql://121.196.211.123:3306/sanxingdui?characterEncoding=utf-8&serverTimezone=UTC
+    username: root
+    password: 123456
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    type: com.alibaba.druid.pool.DruidDataSource
+mybatis:
+  #标注mybatis配置文件的位置
+  #  config-location: classpath:mybatis-config.xml
+  #标注实体类位置
+  type-aliases-package: com.rwh.sanxingdui.pojo
+  configuration:
+    map-underscore-to-camel-case: true
